@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageView
-        android:src="@drawable/score_0"
+        android:src="@drawable/fail_0"
         android:layout_width="140.0dp"
         android:layout_height="180.0dp"
         android:id="@+id/state_imageView"

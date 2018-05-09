@@ -52,31 +52,31 @@ namespace Hangman.Activities
                 switch (value)
                 {
                     case 0:
-                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.score_0);
+                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.fail_0);
                         break;
                     case 1:
-                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.score_1);
+                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.fail_1);
                         break;
                     case 2:
-                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.score_2);
+                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.fail_2);
                         break;
                     case 3:
-                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.score_3);
+                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.fail_3);
                         break;
                     case 4:
-                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.score_4);
+                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.fail_4);
                         break;
                     case 5:
-                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.score_5);
+                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.fail_5);
                         break;
                     case 6:
-                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.score_6);
+                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.fail_6);
                         break;
                     case 7:
-                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.score_7);
+                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.fail_7);
                         break;
                     default:
-                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.score_7);
+                        FindViewById<ImageView>(Resource.Id.state_imageView).SetImageResource(Resource.Drawable.fail_7);
                         break;
                 }
                 _fails = value;
@@ -171,7 +171,7 @@ namespace Hangman.Activities
                     ScoreDB.Insert(new Score { Player = _player, Value = score });
                     V7App.AlertDialog.Builder alert = new V7App.AlertDialog.Builder(this);
                     alert.SetTitle(Resource.String.lose_dialogTitle);
-                    alert.SetMessage(Resources.GetQuantityString(Resource.Plurals.score_message, score, score));
+                    alert.SetMessage($"{GetString(Resource.String.wordAnswer_dialogMessage, Word)}, {Resources.GetQuantityString(Resource.Plurals.score_message, score, score).ToLower()}");
                     alert.SetPositiveButton(Resource.String.ok_button, delegate { Finish(); });
                     alert.SetOnDismissListener(new OnDismissListener(delegate { Finish(); }));
                     alert.Show();

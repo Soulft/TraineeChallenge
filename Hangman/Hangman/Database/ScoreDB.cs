@@ -18,9 +18,8 @@ namespace Hangman.Database
     public static class ScoreDB
     {
         private static SQLiteConnection database;
-        private static SQLitePCL.sqlite3 db;
 
-        private static string dbPath
+        private static string DBPath
         {
             get
             {
@@ -31,14 +30,14 @@ namespace Hangman.Database
 
         public static void CreateTable()
         {
-            database = new SQLiteConnection(dbPath);
+            database = new SQLiteConnection(DBPath);
             database.CreateTable<Score>();
             database.Close();
         }
 
         public static void Insert(Score obj)
         {
-            database = new SQLiteConnection(dbPath);
+            database = new SQLiteConnection(DBPath);
             if (obj.ID == -1) database.Insert(obj);
             else database.Update(obj);
             database.Close();
@@ -46,7 +45,7 @@ namespace Hangman.Database
 
         public static List<Score> Select(string query)
         {
-            database = new SQLiteConnection(dbPath);
+            database = new SQLiteConnection(DBPath);
             List<Score> scores = database.Query<Score>(query);
             database.Close();
             return scores;

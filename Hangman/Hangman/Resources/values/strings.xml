@@ -5,12 +5,13 @@
   <string name="ranking_text">Ranking</string>
   <string name="playerName_dialogTitle">What is your name?</string>
   <string name="playerNameHint_editText">Type your name</string>
-  <string name="lose_dialogTitle">That's sad</string>
+  <string name="lose_dialogTitle">That\'s sad</string>
   <string name="win_dialogTitle">Congratulations!</string>
+  <string name="wordAnswer_dialogMessage">The answer was \"%s\"</string>
   <plurals name="score_message">
-    <item quantity="zero">Your score is <b>%d</b></item>
-    <item quantity="one">Your score is <b>%d</b></item>
-    <item quantity="other">Your score is <b>%d</b></item>
+    <item quantity="zero">Your score is %d</item>
+    <item quantity="one">Your score is %d</item>
+    <item quantity="other">Your score is %d</item>
   </plurals>
   <string name="ok_button">OK</string>
   <string-array name="words_array">

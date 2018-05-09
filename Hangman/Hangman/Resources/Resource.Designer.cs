@@ -2334,31 +2334,55 @@ namespace Hangman
 			public const int design_snackbar_background = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int navigation_empty_icon = 2130837595;
+			public const int fail_0 = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int notification_action_background = 2130837596;
+			public const int fail_1 = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int notification_bg = 2130837597;
+			public const int fail_2 = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int notification_bg_low = 2130837598;
+			public const int fail_3 = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int notification_bg_low_normal = 2130837599;
+			public const int fail_4 = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int notification_bg_low_pressed = 2130837600;
+			public const int fail_5 = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int notification_bg_normal = 2130837601;
+			public const int fail_6 = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int notification_bg_normal_pressed = 2130837602;
+			public const int fail_7 = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int notification_icon_background = 2130837603;
+			public const int navigation_empty_icon = 2130837603;
+			
+			// aapt resource value: 0x7f020064
+			public const int notification_action_background = 2130837604;
+			
+			// aapt resource value: 0x7f020065
+			public const int notification_bg = 2130837605;
+			
+			// aapt resource value: 0x7f020066
+			public const int notification_bg_low = 2130837606;
+			
+			// aapt resource value: 0x7f020067
+			public const int notification_bg_low_normal = 2130837607;
+			
+			// aapt resource value: 0x7f020068
+			public const int notification_bg_low_pressed = 2130837608;
+			
+			// aapt resource value: 0x7f020069
+			public const int notification_bg_normal = 2130837609;
+			
+			// aapt resource value: 0x7f02006a
+			public const int notification_bg_normal_pressed = 2130837610;
+			
+			// aapt resource value: 0x7f02006b
+			public const int notification_icon_background = 2130837611;
 			
 			// aapt resource value: 0x7f020070
 			public const int notification_template_icon_bg = 2130837616;
@@ -2366,35 +2390,11 @@ namespace Hangman
 			// aapt resource value: 0x7f020071
 			public const int notification_template_icon_low_bg = 2130837617;
 			
-			// aapt resource value: 0x7f020064
-			public const int notification_tile_bg = 2130837604;
-			
-			// aapt resource value: 0x7f020065
-			public const int notify_panel_notification_icon_bg = 2130837605;
-			
-			// aapt resource value: 0x7f020066
-			public const int score_0 = 2130837606;
-			
-			// aapt resource value: 0x7f020067
-			public const int score_1 = 2130837607;
-			
-			// aapt resource value: 0x7f020068
-			public const int score_2 = 2130837608;
-			
-			// aapt resource value: 0x7f020069
-			public const int score_3 = 2130837609;
-			
-			// aapt resource value: 0x7f02006a
-			public const int score_4 = 2130837610;
-			
-			// aapt resource value: 0x7f02006b
-			public const int score_5 = 2130837611;
-			
 			// aapt resource value: 0x7f02006c
-			public const int score_6 = 2130837612;
+			public const int notification_tile_bg = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int score_7 = 2130837613;
+			public const int notify_panel_notification_icon_bg = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
 			public const int tooltip_frame_dark = 2130837614;
@@ -3443,11 +3443,11 @@ namespace Hangman
 			// aapt resource value: 0x7f0b0028
 			public const int newGame_text = 2131427368;
 			
-			// aapt resource value: 0x7f0b002f
-			public const int novoJogo = 2131427375;
+			// aapt resource value: 0x7f0b0030
+			public const int novoJogo = 2131427376;
 			
-			// aapt resource value: 0x7f0b002e
-			public const int ok_button = 2131427374;
+			// aapt resource value: 0x7f0b002f
+			public const int ok_button = 2131427375;
 			
 			// aapt resource value: 0x7f0b0021
 			public const int password_toggle_content_description = 2131427361;
@@ -3481,6 +3481,9 @@ namespace Hangman
 			
 			// aapt resource value: 0x7f0b002d
 			public const int win_dialogTitle = 2131427373;
+			
+			// aapt resource value: 0x7f0b002e
+			public const int wordAnswer_dialogMessage = 2131427374;
 			
 			static String()
 			{

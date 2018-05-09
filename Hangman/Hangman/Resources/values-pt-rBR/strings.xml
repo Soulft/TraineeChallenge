@@ -7,10 +7,11 @@
   <string name="playerNameHint_editText">Digite seu nome</string>
   <string name="lose_dialogTitle">Que pena</string>
   <string name="win_dialogTitle">Parabéns</string>
+  <string name="wordAnswer_dialogMessage">A palavra era \"%s\"</string>
   <plurals name="score_message">
-    <item quantity="zero">Você fez <b>%d</b> pontos</item>
-    <item quantity="one">Você fez <b>%d</b> ponto</item>
-    <item quantity="other">Você fez <b>%d</b> pontos</item>
+    <item quantity="zero">Você fez %d pontos</item>
+    <item quantity="one">Você fez %d ponto</item>
+    <item quantity="other">Você fez %d pontos</item>
   </plurals>
   <string name="ok_button">Ok</string>
   <string-array name="words_array">
