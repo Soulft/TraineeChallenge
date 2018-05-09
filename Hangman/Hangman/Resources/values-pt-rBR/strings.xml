@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Jogo da Forca</string>
+  <string name="newGame_text">Novo jogo</string>
+  <string name="ranking_text">Recordes</string>
+  <string name="playerName_dialogTitle">Qual é o seu nome?</string>
+  <string name="playerNameHint_editText">Digite seu nome</string>
+  <string name="lose_dialogTitle">Que pena</string>
+  <string name="win_dialogTitle">Parabéns</string>
+  <plurals name="score_message">
+    <item quantity="zero">Você fez <b>%d</b> pontos</item>
+    <item quantity="one">Você fez <b>%d</b> ponto</item>
+    <item quantity="other">Você fez <b>%d</b> pontos</item>
+  </plurals>
+  <string name="ok_button">Ok</string>
+  <string-array name="words_array">
+	  <item>água</item>
+	  <item>arqueduto</item>
+	  <item>aéreo</item>
+	  <item>bacia</item>
+	  <item>bolso</item>
+	  <item>besouro</item>
+	  <item>casa</item>
+	  <item>cerca</item>
+	  <item>circo</item>
+	  <item>degrau</item>
+	  <item>dado</item>
+	  <item>dodô</item>
+	  <item>elefante</item>
+	  <item>escada</item>
+	  <item>elevador</item>
+	  <item>fantasia</item>
+	  <item>fogueira</item>
+	  <item>feira</item>
+	  <item>gelo</item>
+	  <item>galinha</item>
+	  <item>golfe</item>
+	  <item>hiena</item>
+	  <item>humano</item>
+	  <item>história</item>
+	  <item>igual</item>
+	  <item>ideia</item>
+	  <item>incorporado</item>
+	  <item>jóia</item>
+	  <item>justo</item>
+	  <item>janela</item>
+	  <item>lapiseira</item>
+	  <item>lobo</item>
+	  <item>lesma</item>
+	  <item>material</item>
+	  <item>morcego</item>
+	  <item>mundo</item>
+	  <item>navio</item>
+	  <item>nuance</item>
+	  <item>nome</item>
+	  <item>oitavo</item>
+	  <item>objetivo</item>
+	  <item>octógono</item>
+	  <item>palavra</item>
+	  <item>pessoa</item>
+	  <item>poder</item>
+	  <item>queijo</item>
+	  <item>quintal</item>
+	  <item>qualidade</item>
+	  <item>rato</item>
+	  <item>rosto</item>
+	  <item>risoto</item>
+	  <item>sol</item>
+	  <item>saudade</item>
+	  <item>silêncio</item>
+	  <item>telhado</item>
+	  <item>tábua</item>
+	  <item>torresmo</item>
+	  <item>uva</item>
+	  <item>uivar</item>
+	  <item>utensílio</item>
+	  <item>voar</item>
+	  <item>vassoura</item>
+	  <item>vento</item>
+	  <item>xadrez</item>
+	  <item>xícara</item>
+	  <item>xeque</item>
+	  <item>zebra</item>
+	  <item>zoológico</item>
+	  <item>zumbi</item>
+  </string-array>
+</resources>

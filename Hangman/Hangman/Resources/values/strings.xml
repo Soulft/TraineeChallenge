@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Hangman</string>
+  <string name="newGame_text">New game</string>
+  <string name="ranking_text">Ranking</string>
+  <string name="playerName_dialogTitle">What is your name?</string>
+  <string name="playerNameHint_editText">Type your name</string>
+  <string name="lose_dialogTitle">That's sad</string>
+  <string name="win_dialogTitle">Congratulations!</string>
+  <plurals name="score_message">
+    <item quantity="zero">Your score is <b>%d</b></item>
+    <item quantity="one">Your score is <b>%d</b></item>
+    <item quantity="other">Your score is <b>%d</b></item>
+  </plurals>
+  <string name="ok_button">OK</string>
+  <string-array name="words_array">
+	  <item>water</item>
+	  <item>airplane</item>
+	  <item>air</item>
+	  <item>bowl</item>
+	  <item>pocket</item>
+	  <item>beetle</item>
+	  <item>home</item>
+	  <item>close</item>
+	  <item>circus</item>
+	  <item>step</item>
+	  <item>dice</item>
+	  <item>near</item>
+	  <item>elephant</item>
+	  <item>ladder</item>
+	  <item>elevator</item>
+	  <item>fantasy</item>
+	  <item>fire</item>
+	  <item>market</item>
+	  <item>ice</item>
+	  <item>chicken</item>
+	  <item>golf</item>
+	  <item>hyena</item>
+	  <item>human</item>
+	  <item>history</item>
+	  <item>equal</item>
+	  <item>idea</item>
+	  <item>building</item>
+	  <item>jewelry</item>
+	  <item>fair</item>
+	  <item>window</item>
+	  <item>pencil</item>
+	  <item>wolf</item>
+	  <item>slug</item>
+	  <item>material</item>
+	  <item>bat</item>
+	  <item>world</item>
+	  <item>ship</item>
+	  <item>nuance</item>
+	  <item>name</item>
+	  <item>eighth</item>
+	  <item>goal</item>
+	  <item>octagon</item>
+	  <item>word</item>
+	  <item>person</item>
+	  <item>power</item>
+	  <item>cheese</item>
+	  <item>backyard</item>
+	  <item>quality</item>
+	  <item>mouse</item>
+	  <item>face</item>
+	  <item>spaghetti</item>
+	  <item>sun</item>
+	  <item>missing</item>
+	  <item>silence</item>
+	  <item>roof</item>
+	  <item>board</item>
+	  <item>bacon</item>
+	  <item>grape</item>
+	  <item>howl</item>
+	  <item>utensil</item>
+	  <item>fly</item>
+	  <item>broom</item>
+	  <item>wind</item>
+	  <item>chess</item>
+	  <item>cup</item>
+	  <item>checkmate</item>
+	  <item>zebra</item>
+	  <item>zoo</item>
+	  <item>zombie</item>
+  </string-array>
+</resources>
