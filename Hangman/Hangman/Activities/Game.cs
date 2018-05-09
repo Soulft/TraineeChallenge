@@ -159,7 +159,7 @@ namespace Hangman.Activities
                 if (b)
                 {
                     //Calculate the player's score and stores it in the local database
-                    int score = (int)((Word.Length * (Tries - Fails)) / (Fails == 0 ? 0.5 : Fails) * 10);
+                    int score = (int)(Word.Length * 0.5 * (7 - Fails));
                     ScoreDB.Insert(new Score { Player = _player, Value = score });
 
                     //Create a dialog showing the answer and score 
@@ -182,7 +182,7 @@ namespace Hangman.Activities
                 if (Fails >= 7)
                 {
                     //Calculate the player's score and stores it in the local database
-                    int score = (int)((Word.Length * (Tries - Fails)) / (Fails == 0 ? 0.5 : Fails) * 10);
+                    int score = (int)(Word.Length * 0.5 * (7 - Fails));
                     ScoreDB.Insert(new Score { Player = _player, Value = score });
 
                     //Create a dialog to show the player's score 
