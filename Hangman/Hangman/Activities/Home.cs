@@ -23,6 +23,7 @@ namespace Hangman.Activities
         {
             base.OnCreate(savedInstanceState);
 
+            //Set layout and prepare to show it on screen
             SetContentView(Resource.Layout.home_activity);
 
             ScoreDB.CreateTable();
@@ -37,8 +38,10 @@ namespace Hangman.Activities
         protected override void OnStart()
         {
             base.OnStart();
+
             List<Score> scores = ScoreDB.Select($"SELECT * FROM {nameof(Score)} ORDER BY {nameof(Score.Value)} DESC");
 
+            //Shows the list of scores
             ListView ranking_listView = FindViewById<ListView>(Resource.Id.ranking_listView);
             ranking_listView.Adapter = new Scores(scores, this);
         }

@@ -30,6 +30,7 @@ namespace Hangman.Activities
             get { return _word; }
             set
             {
+                //Remove special characters such as 'á'
                 StringBuilder stringBuilder = new StringBuilder();
                 var arrayText = value.Normalize(NormalizationForm.FormD).ToCharArray();
                 foreach (char letter in arrayText)
@@ -38,6 +39,7 @@ namespace Hangman.Activities
                         stringBuilder.Append(letter);
                 }
                 _normalizedWord = stringBuilder.ToString();
+
                 _correct = new bool[value.Length];
                 _word = value;
             }
@@ -87,7 +89,10 @@ namespace Hangman.Activities
         {
             base.OnCreate(savedInstanceState);
 
+            //Set layout and prepare to show it on screen
             SetContentView(Resource.Layout.game_activity);
+
+            //Select a random word from the string resource file 
             var wordArray = Resources.GetStringArray(Resource.Array.words_array);
             Word = wordArray[(new Random().Next() % wordArray.Length)];
             MakeTry('0');
@@ -119,6 +124,7 @@ namespace Hangman.Activities
             FindViewById<Button>(Resource.Id.y_button).Click += KeyboardButtonPressed;
             FindViewById<Button>(Resource.Id.z_button).Click += KeyboardButtonPressed;
 
+            //Shows a dialog for the player to enter his name, and if nothing has been typed, create a random one
             EditText playerName_editText = new EditText(this);
             playerName_editText.Hint = GetString(Resource.String.playerNameHint_editText);
             int _24dp = (int)(24 * ((float)Resources.DisplayMetrics.DensityDpi / 160F));
@@ -146,12 +152,17 @@ namespace Hangman.Activities
             {
                 (sender as AppCompatButton).Background = GetDrawable(Resource.Color.colorPrimary);
                 (sender as AppCompatButton).Enabled = false;
+
+                //Check if the player has won  
                 bool b = true;
                 foreach (bool c in _correct) if (!c) b = false;
                 if (b)
                 {
+                    //Calculate the player's score and stores it in the local database
                     int score = (int)((Word.Length * (Tries - Fails)) / (Fails == 0 ? 0.5 : Fails) * 10);
                     ScoreDB.Insert(new Score { Player = _player, Value = score });
+
+                    //Create a dialog showing the answer and score 
                     V7App.AlertDialog.Builder alert = new V7App.AlertDialog.Builder(this);
                     alert.SetTitle(Resource.String.win_dialogTitle);
                     alert.SetMessage(Resources.GetQuantityString(Resource.Plurals.score_message, score, score));
@@ -164,11 +175,17 @@ namespace Hangman.Activities
             {
                 (sender as AppCompatButton).Background = GetDrawable(Resource.Color.colorAccent);
                 (sender as AppCompatButton).Enabled = false;
+
                 Fails += 1;
+
+                //Check if the player have lose the game 
                 if (Fails >= 7)
                 {
+                    //Calculate the player's score and stores it in the local database
                     int score = (int)((Word.Length * (Tries - Fails)) / (Fails == 0 ? 0.5 : Fails) * 10);
                     ScoreDB.Insert(new Score { Player = _player, Value = score });
+
+                    //Create a dialog to show the player's score 
                     V7App.AlertDialog.Builder alert = new V7App.AlertDialog.Builder(this);
                     alert.SetTitle(Resource.String.lose_dialogTitle);
                     alert.SetMessage($"{GetString(Resource.String.wordAnswer_dialogMessage, Word)}, {Resources.GetQuantityString(Resource.Plurals.score_message, score, score).ToLower()}");
@@ -195,6 +212,7 @@ namespace Hangman.Activities
             }
         }
 
+        //Check if the tried letter is present in the word 
         private bool MakeTry(char letter)
         {
             bool r = false;

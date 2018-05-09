@@ -21,6 +21,7 @@ namespace Hangman.Database
 
         private static string DBPath
         {
+            //Get the app's folder url
             get
             {
                 string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);

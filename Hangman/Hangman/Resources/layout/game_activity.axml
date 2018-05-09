@@ -4,11 +4,11 @@
     android:layout_height="match_parent">
     <ImageView
         android:src="@drawable/fail_0"
-        android:layout_width="140.0dp"
+        android:layout_width="110.0dp"
         android:layout_height="180.0dp"
         android:id="@+id/state_imageView"
-        android:layout_marginLeft="0.0dp"
-        android:layout_marginTop="24.0dp" />
+        android:layout_marginLeft="24.0dp"
+        android:layout_marginTop="48.0dp" />
     <TextView
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_height="match_parent"
@@ -230,10 +230,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/state_imageView"
         android:id="@+id/word_textView"
-        android:layout_marginTop="0.0dp"
+        android:layout_marginTop="-16.0dp"
         android:layout_marginBottom="8.0dp"
         android:layout_marginRight="16.0dp"
         android:layout_marginLeft="16.0dp"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:layout_above="@id/keyboard_gridLayout" />
 </RelativeLayout>

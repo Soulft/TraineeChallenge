@@ -33,6 +33,7 @@ namespace Hangman.Adapters
             return position;
         }
 
+        //Combine the object (Score) with the template and prepare it to add to ListView
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             View view = convertView;
