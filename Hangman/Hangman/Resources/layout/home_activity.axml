@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_textView"
+        android:layout_marginTop="40.0dp"
+        android:layout_marginLeft="16.0dp" />
+    <TextView
+        android:text="@string/ranking_text"
+        android:textSize="8pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankingTitle_textView"
+        android:layout_marginTop="12.0dp"
+        android:layout_marginLeft="16.0dp"
+        android:layout_marginBottom="8.0dp"
+        android:layout_below="@id/title_textView" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_below="@id/rankingTitle_textView"
+        android:id="@+id/ranking_listView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="72dp"
+        android:fastScrollEnabled="true"
+        android:clipToPadding="false"
+        app:paddingEnd="16dp"
+        android:layout_height="match_parent"
+        android:paddingStart="16dp" />
+    <Button
+        android:text="@string/newGame_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newGame_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12.0dp"
+        android:layout_marginEnd="12.0dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffffff"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+</RelativeLayout>
